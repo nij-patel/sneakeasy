@@ -1,5 +1,6 @@
 class Shoe {
   final String name;
+  final int price;
   final int id;
   final String brand;
   final String material;
@@ -11,6 +12,7 @@ class Shoe {
 
   Shoe(
       {required this.name,
+      required this.price,
       required this.id,
       required this.brand,
       required this.material,
@@ -22,6 +24,7 @@ class Shoe {
   factory Shoe.fromJson(Map<String, dynamic> json) {
     return Shoe(
         name: json["name"],
+        price: json["price"],
         id: json["id"],
         brand: json["brand"],
         material: json["material"],
