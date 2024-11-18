@@ -8,7 +8,7 @@ class Shoe {
   final bool trending;
   final String link;
   final String imageUrl;
-  final bool seen = false;
+  bool seen = false;
 
   Shoe(
       {required this.name,
@@ -32,5 +32,9 @@ class Shoe {
         trending: json["trending"],
         imageUrl: json["imageUrl"],
         link: json["link"]);
+  }
+
+  void markSeen() {
+    seen = true;
   }
 }

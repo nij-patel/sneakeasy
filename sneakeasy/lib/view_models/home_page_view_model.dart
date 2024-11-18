@@ -16,7 +16,7 @@ class HomePageViewModel {
     // pseudo data
     _allShoes.addAll([
       Shoe(
-        name: 'Air Jordan 1',
+        name: 'Air Jordan 1 Mid Chicago',
         price: 250,
         id: 1,
         brand: 'Nike',
@@ -27,7 +27,7 @@ class HomePageViewModel {
         link: 'https://www.ebay.com/itm/274493978849',
       ),
       Shoe(
-        name: 'Yeezy Boost 350',
+        name: 'Yeezy Boost 350 Triple White',
         price: 300,
         id: 2,
         brand: 'Adidas',
