@@ -13,8 +13,12 @@ class WishlistViewModel extends ChangeNotifier {
   }
 
   void addShoe(Shoe shoe) {
-    _wishlist.addShoe(shoe);
-    print('Shoe added to wishlist: ${shoe.name}');
+    if (!getWishlist().contains(shoe)){
+      _wishlist.addShoe(shoe);
+      print('Shoe added to wishlist: ${shoe.name}');
+    } else {
+      print('Shoe was already in wishlist: ${shoe.name}');
+    }
   }
 
   void removeFromWishlist(Shoe shoe) {

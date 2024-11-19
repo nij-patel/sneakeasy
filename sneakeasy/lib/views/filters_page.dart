@@ -17,13 +17,14 @@ class FilterView extends StatelessWidget {
     final filtersViewModel = Provider.of<FiltersViewModel>(context);
     final homePageViewModel = Provider.of<HomePageViewModel>(context);
 
+    // Get Previously Selected
     List<String> selectedColors = filtersViewModel.selectedColors;
     List<String> selectedBrands = filtersViewModel.selectedBrands;
     String selectedStyle = filtersViewModel.selectedStyle;
     double selectedMinPrice = filtersViewModel.selectedMinPrice ?? 0.0;
     double selectedMaxPrice = filtersViewModel.selectedMaxPrice ?? 1000.0; // Adjust max price as needed
 
-        // Ensure the values are within bounds for the slider
+    // Ensure the values are within bounds for the slider
     selectedMinPrice = selectedMinPrice.clamp(0.0, 1000.0);
     selectedMaxPrice = selectedMaxPrice.clamp(selectedMinPrice, 1000.0);
 
@@ -75,7 +76,7 @@ class FilterView extends StatelessWidget {
             RangeSlider(
               values: RangeValues(selectedMinPrice, selectedMaxPrice),
               min: 0,
-              max: 1000, // Adjust as needed
+              max: 1000,
               divisions: 100,
               labels: RangeLabels(
                 '\$${selectedMinPrice.toStringAsFixed(2)}',
