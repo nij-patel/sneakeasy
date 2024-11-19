@@ -1,7 +1,9 @@
+import 'package:flutter/material.dart';
+
 import '../models/shoe_model.dart';
 import '../models/wishlist_model.dart';
 
-class WishlistViewModel {
+class WishlistViewModel extends ChangeNotifier {
   final Wishlist _wishlist;
 
   WishlistViewModel(this._wishlist);
@@ -10,9 +12,15 @@ class WishlistViewModel {
     return _wishlist.likedShoeList;
   }
 
+  void addShoe(Shoe shoe) {
+    _wishlist.addShoe(shoe);
+    print('Shoe added to wishlist: ${shoe.name}');
+  }
+
   void removeFromWishlist(Shoe shoe) {
     _wishlist.removeShoe(shoe);
     print('Shoe removed from wishlist: ${shoe.name}');
+    notifyListeners();
   }
 
   void buyShoe(Shoe shoe) {

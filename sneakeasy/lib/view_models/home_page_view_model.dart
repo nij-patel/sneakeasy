@@ -4,7 +4,7 @@ import '../models/filters_model.dart';
 import '../models/shoe_model.dart';
 import '../models/wishlist_model.dart';
 
-class HomePageViewModel {
+class HomePageViewModel extends ChangeNotifier {
   final List<Shoe> _allShoes = [];
   final List<Shoe> _filteredShoes = [];
   final Wishlist _wishlist;
