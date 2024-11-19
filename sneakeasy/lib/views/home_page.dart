@@ -58,16 +58,16 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: filteredShoes.isEmpty
-        ? Center(
-            child: Text(
-              'No shoes available to swipe!',
-              style: TextStyle(fontSize: 16),
+          ? Center(
+              child: Text(
+                'No shoes available to swipe!',
+                style: TextStyle(fontSize: 16),
+              ),
+            )
+          : SwipingInterface(
+              filteredShoes: filteredShoes,
+              homePageViewModel: homePageViewModel,
             ),
-          )
-        : SwipingInterface(
-            filteredShoes: filteredShoes,
-            homePageViewModel: homePageViewModel,
-          ),
     );
   }
 }
@@ -95,19 +95,22 @@ class SwipingInterface extends StatelessWidget {
 
       return CardSwiper(
         cardsCount: filteredShoes.length,
-        cardBuilder: (context, index, horizontalOffsetPercentage, verticalOffsetPercentage) {
+        cardBuilder: (context, index, horizontalOffsetPercentage,
+            verticalOffsetPercentage) {
           return ShoeCard(
             shoe: filteredShoes[index],
           );
         },
-        allowedSwipeDirection: AllowedSwipeDirection.symmetric(horizontal: true, vertical: false),
+        allowedSwipeDirection:
+            AllowedSwipeDirection.symmetric(horizontal: true, vertical: false),
         onEnd: () {
           // Handle what happens when all cards are swiped
           print("All shoes swiped!");
         },
         onSwipe: (previndex, index, direction) {
           if (direction == CardSwiperDirection.right) {
-            Provider.of<WishlistViewModel>(context, listen: false).addShoe(filteredShoes[previndex]);
+            Provider.of<WishlistViewModel>(context, listen: false)
+                .addShoe(filteredShoes[previndex]);
             print("Shoe added to wishlist: ${filteredShoes[previndex].name}");
           }
           return true;
@@ -141,7 +144,7 @@ class SwipingInterface extends StatelessWidget {
 //     }
 //     else{
 //       print(filteredShoes.length);
-    
+
 //       return CardSwiper(
 //         cardsCount: filteredShoes.length,
 //         cardBuilder: (context, index, horizontalOffsetPercentage, verticalOffsetPercentage) {
@@ -162,7 +165,6 @@ class SwipingInterface extends StatelessWidget {
 //     }
 //   }
 // }
-
 
 // class ShoeCard extends StatelessWidget {
 //   final Shoe shoe;

@@ -57,7 +57,7 @@ class HomePageViewModel extends ChangeNotifier {
         material: 'Primeknit',
         primaryColor: 'Red',
         trending: false,
-        imageUrl: 'https://cdn.flightclub.com/750/TEMPLATE/231194/1.jpg',
+        imageUrl: 'https://i.ebayimg.com/images/g/iWgAAOSwG0Zly7sV/s-l1200.jpg',
         link:
             'https://www.flightclub.com/adidas-ultraboost-21-solar-red-231194',
       ),
@@ -69,7 +69,8 @@ class HomePageViewModel extends ChangeNotifier {
         material: 'Canvas',
         primaryColor: 'Black',
         trending: true,
-        imageUrl: 'https://cdn.flightclub.com/750/TEMPLATE/199008/1.jpg',
+        imageUrl:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGf6B6QueSe8SRXt3F9WZ98V8NIg2rObaMQ&s',
         link:
             'https://www.flightclub.com/converse-chuck-taylor-all-star-199008',
       ),
@@ -81,7 +82,8 @@ class HomePageViewModel extends ChangeNotifier {
         material: 'Mesh & Leather',
         primaryColor: 'Blue',
         trending: false,
-        imageUrl: 'https://cdn.flightclub.com/750/TEMPLATE/175329/1.jpg',
+        imageUrl:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIffWyp3Cl1p-p5JjzDfP_do_9TQ7Qz_NVTg&s',
         link: 'https://www.flightclub.com/puma-rs-x-bold-175329',
       ),
       Shoe(
@@ -92,7 +94,8 @@ class HomePageViewModel extends ChangeNotifier {
         material: 'Suede & Canvas',
         primaryColor: 'Black',
         trending: true,
-        imageUrl: 'https://cdn.flightclub.com/750/TEMPLATE/213960/1.jpg',
+        imageUrl:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN_muoPdwDrp-FHTK1DUZuX6AbLneTNzqh7g&s',
         link: 'https://www.flightclub.com/vans-old-skool-black-white-213960',
       ),
       Shoe(
@@ -103,7 +106,8 @@ class HomePageViewModel extends ChangeNotifier {
         material: 'Leather & Suede',
         primaryColor: 'Green',
         trending: true,
-        imageUrl: 'https://cdn.flightclub.com/750/TEMPLATE/211405/1.jpg',
+        imageUrl:
+            'https://images.stockx.com/images/New-Balance-550-White-Green-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1628002321',
         link: 'https://www.flightclub.com/new-balance-550-white-green-211405',
       ),
       Shoe(
@@ -114,7 +118,8 @@ class HomePageViewModel extends ChangeNotifier {
         material: 'Leather & Suede',
         primaryColor: 'Black',
         trending: true,
-        imageUrl: 'https://cdn.flightclub.com/750/TEMPLATE/138206/1.jpg',
+        imageUrl:
+            'https://images.stockx.com/images/Air-Jordan-4-Retro-Black-Cement-2019-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1606316608',
         link: 'https://www.flightclub.com/jordan-4-retro-bred-138206',
       ),
       Shoe(
@@ -125,7 +130,7 @@ class HomePageViewModel extends ChangeNotifier {
         material: 'Mesh',
         primaryColor: 'Silver',
         trending: false,
-        imageUrl: 'https://cdn.flightclub.com/750/TEMPLATE/233703/1.jpg',
+        imageUrl: 'https://cdn.flightclub.com/TEMPLATE/312097/1.jpg',
         link:
             'https://www.flightclub.com/asics-gel-kayano-14-white-silver-233703',
       ),
@@ -137,7 +142,8 @@ class HomePageViewModel extends ChangeNotifier {
         material: 'Leather',
         primaryColor: 'White',
         trending: true,
-        imageUrl: 'https://cdn.flightclub.com/750/TEMPLATE/208675/1.jpg',
+        imageUrl:
+            'https://reebok.bynder.com/transform/535ef73b-8bfa-4a40-b05c-5137540b2269/100000317_SLC_eCom-tif?io=transform:fit,width:500&quality=100',
         link: 'https://www.flightclub.com/reebok-club-c-85-vintage-208675',
       ),
       Shoe(
@@ -148,7 +154,8 @@ class HomePageViewModel extends ChangeNotifier {
         material: 'Mesh & Suede',
         primaryColor: 'Blue',
         trending: false,
-        imageUrl: 'https://cdn.flightclub.com/750/TEMPLATE/221749/1.jpg',
+        imageUrl:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx82yVt5ByrfMfP4SM6pqJJ_vANPpaG8Ae0A&s',
         link:
             'https://www.flightclub.com/saucony-shadow-6000-white-blue-221749',
       ),
