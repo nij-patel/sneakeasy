@@ -30,7 +30,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         title: Text('Sneaker Swiper'),
@@ -44,6 +43,11 @@ class _HomePageState extends State<HomePage> {
                 print("Updating filtered shoes");
                 filteredShoes = homePageViewModel.getFilteredShoes();
                 swiperKey = UniqueKey();
+
+                print("Filtered shoes length is: ${filteredShoes.length}");
+                for (var shoe in filteredShoes){
+                  print("shoe is ${shoe.name}");
+                }
               });
             },
           ),
@@ -67,8 +71,10 @@ class _HomePageState extends State<HomePage> {
             )
           : CardSwiper(key: swiperKey,
               cardsCount: filteredShoes.length,
+              numberOfCardsDisplayed: 1,
               cardBuilder: (context, index, horizontalOffsetPercentage,
                   verticalOffsetPercentage) {
+                    print("Index is $index");
                 return ShoeCard(
                   shoe: filteredShoes[index],
                 );
@@ -131,9 +137,21 @@ class ShoeCard extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Column(
                 children: [
-                  Text(
-                    shoe.name,
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        shoe.name,
+                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                      if (shoe.trending) ...[
+                        SizedBox(width: 5),
+                        Text(
+                          '🔥',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                      ],
+                    ],
                   ),
                   Text(shoe.brand),
                   Text("\$${shoe.price.toStringAsFixed(2)}"),

@@ -3,14 +3,6 @@ import 'package:provider/provider.dart';
 import '../view_models/filters_view_model.dart';  // Import your FiltersViewModel
 import '../view_models/home_page_view_model.dart'; // Import your HomePageViewModel
 
-
-
-
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import '../view_models/filters_view_model.dart';  // Import your FiltersViewModel
-import '../view_models/home_page_view_model.dart'; // Import your HomePageViewModel
-
 class FilterView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
