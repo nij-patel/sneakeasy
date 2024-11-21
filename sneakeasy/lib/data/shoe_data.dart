@@ -228,4 +228,106 @@ final List<Shoe> allShoesData = [
     link:
         'https://www.amazon.com/HOKA-ONE-Womens-Low-top-Sneaker/dp/B09WTJX38X',
   ),
+  Shoe(
+    name: 'On Cloud 5',
+    price: 140,
+    id: 18,
+    brand: 'On Running',
+    material: 'Mesh',
+    primaryColor: 'White',
+    trending: true,
+    imageUrl:
+        'https://dks.scene7.com/is/image/GolfGalaxy/22MAZWCLD5RSTBLCKFTW_Undyed?qlt=70&wid=500&fmt=webp&op_sharpen=1',
+    link:
+        'https://www.dickssportinggoods.com/p/on-womens-cloud-5-shoes-22mazwcld5rstblckftw/22mazwcld5rstblckftw?sku=23764263',
+  ),
+  Shoe(
+    name: 'Saucony Endorphin Speed 3',
+    price: 170,
+    id: 19,
+    brand: 'Saucony',
+    material: 'Mesh',
+    primaryColor: 'Pink',
+    trending: true,
+    imageUrl:
+        'https://img.runningwarehouse.com/watermark/rs.php?path=SES3M03-1.jpg&nw=1080',
+    link:
+        'https://www.runningwarehouse.com/Saucony_Endorphin_Speed_3/descpage-SES3M03.html',
+  ),
+  Shoe(
+    name: 'Crocs Classic Clog',
+    price: 50,
+    id: 20,
+    brand: 'Crocs',
+    material: 'Rubber',
+    primaryColor: 'Blue',
+    trending: true,
+    imageUrl:
+        'https://media.crocs.com/images/t_pdphero/f_auto%2Cq_auto/products/10001_4ST_ALT100/crocs',
+    link: 'https://www.crocs.com/p/classic-clog/10001.html',
+  ),
+  Shoe(
+    name: 'Nike Pegasus 40',
+    price: 130,
+    id: 21,
+    brand: 'Nike',
+    material: 'Mesh',
+    primaryColor: 'Grey',
+    trending: false,
+    imageUrl:
+        'https://img.runningwarehouse.com/watermark/rs.php?path=NP40M14-1.jpg&nw=1080',
+    link:
+        'https://www.runningwarehouse.com/Nike_Pegasus_40/descpage-NP40M14.html',
+  ),
+  Shoe(
+    name: 'Nike Free Run 5.0',
+    price: 100,
+    id: 22,
+    brand: 'Nike',
+    material: 'Mesh',
+    primaryColor: 'Gold',
+    trending: false,
+    imageUrl: 'https://cdn.modesens.com/media/137945767?w=400',
+    link:
+        'https://modesens.com/product/nike-men-free-run-50-road-running-shoes-grey-50405401/?country=us&language=en',
+  ),
+  Shoe(
+    name: 'Adidas NMD R1 V2',
+    price: 150,
+    id: 23,
+    brand: 'Adidas',
+    material: 'Primeknit',
+    primaryColor: 'Black',
+    trending: true,
+    imageUrl:
+        'https://images.footlocker.com/is/image/EBFL2/IE7279_a1?wid=500&hei=500&fmt=png-alpha',
+    link:
+        'https://www.footlocker.com/product/~/IE7279.html?source=shoppingads&locale=en-US&SID=6936&inceptor=1',
+  ),
+  Shoe(
+    name: 'Under Armour HOVR Phantom 3',
+    price: 160,
+    id: 24,
+    brand: 'Under Armour',
+    material: 'Mesh',
+    primaryColor: 'Grey',
+    trending: true,
+    imageUrl:
+        'https://images.footlocker.com/is/image/EBFL2/26993100_a1?wid=500&hei=500&fmt=png-alpha',
+    link:
+        'https://www.footlocker.com/product/~/26993100.html?source=shoppingads&locale=en-US&SID=6936&inceptor=1',
+  ),
+  Shoe(
+    name: 'Nike Blazer Mid 77 Vintage',
+    price: 100,
+    id: 25,
+    brand: 'Nike',
+    material: 'Leather',
+    primaryColor: 'White',
+    trending: true,
+    imageUrl:
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fb7eda3c-5ac8-4d05-a18f-1c2c5e82e36e/BLAZER+MID+%2777+VNTG.png',
+    link:
+        'https://www.nike.com/t/blazer-mid-77-vintage-mens-shoes-nw30B2/BQ6806-100?nikemt=true',
+  ),
 ];
