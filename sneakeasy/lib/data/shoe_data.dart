@@ -141,4 +141,91 @@ final List<Shoe> allShoesData = [
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx82yVt5ByrfMfP4SM6pqJJ_vANPpaG8Ae0A&s',
     link: 'https://www.flightclub.com/saucony-shadow-6000-white-blue-221749',
   ),
+  // Additional shoes
+  Shoe(
+    name: 'Reebok Classic Leather',
+    price: 75,
+    id: 11,
+    brand: 'Reebok',
+    material: 'Leather',
+    primaryColor: 'White',
+    trending: true,
+    imageUrl: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:--',
+    link:
+        'https://www.reebok.com/p/100008790/classic-leather-shoes?georedirect=false',
+  ),
+  Shoe(
+    name: 'Saucony Jazz Original',
+    price: 90,
+    id: 12,
+    brand: 'Saucony',
+    material: 'Suede & Nylon',
+    primaryColor: 'Grey',
+    trending: false,
+    imageUrl:
+        'https://m.media-amazon.com/images/I/81h2t-HTo1L._AC_SR1840,1472_.jpg',
+    link:
+        'https://www.zappos.com/p/unisex-saucony-originals-jazz-81-white-gray/product/9820824/color/749',
+  ),
+  Shoe(
+    name: 'Air Jordan 5 Fire Red',
+    price: 225,
+    id: 13,
+    brand: 'Nike',
+    material: 'Leather',
+    primaryColor: 'Red',
+    trending: true,
+    imageUrl:
+        'https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/078/085/028/original/13617_01.jpg.jpeg?action=crop&width=750',
+    link:
+        'https://www.goat.com/sneakers/air-jordan-5-retro-2013-release-136027-120',
+  ),
+  Shoe(
+    name: 'Adidas Samba Classic',
+    price: 70,
+    id: 14,
+    brand: 'Adidas',
+    material: 'Leather',
+    primaryColor: 'Black',
+    trending: true,
+    imageUrl:
+        'https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/cc3416c01bff48249f77a7fd012dd9fd_9366/Samba_Classic_Shoes_White_772109_01_standard.jpg',
+    link: 'https://www.adidas.com/us/samba-classic-shoes/772109.html',
+  ),
+  Shoe(
+    name: 'Under Armour HOVR Sonic 4',
+    price: 110,
+    id: 15,
+    brand: 'Under Armour',
+    material: 'Knit',
+    primaryColor: 'Black',
+    trending: false,
+    imageUrl: 'https://i.ebayimg.com/images/g/Kp4AAOSwtdpm-YA~/s-l1600.webp',
+    link: 'https://www.ebay.com/itm/387433432937',
+  ),
+  Shoe(
+    name: 'Brooks Ghost 14',
+    price: 140,
+    id: 16,
+    brand: 'Brooks',
+    material: 'Mesh',
+    primaryColor: 'Grey',
+    trending: true,
+    imageUrl:
+        'https://m.media-amazon.com/images/I/71S+w4QQ0HL._AC_SR1840,1472_.jpg',
+    link:
+        'https://www.zappos.com/p/womens-brooks-single-shoe-ghost-14-alloy-primer-grey-oyster/product/9671546/color/913591',
+  ),
+  Shoe(
+    name: 'Hoka Clifton 8',
+    price: 140,
+    id: 17,
+    brand: 'Hoka',
+    material: 'Mesh',
+    primaryColor: 'Black',
+    trending: true,
+    imageUrl: 'https://m.media-amazon.com/images/I/71+8YdknJLL._AC_SX695_.jpg',
+    link:
+        'https://www.amazon.com/HOKA-ONE-Womens-Low-top-Sneaker/dp/B09WTJX38X',
+  ),
 ];
