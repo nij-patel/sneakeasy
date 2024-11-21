@@ -4,7 +4,7 @@ import '../models/shoe_model.dart';
 class ShoeDetailView extends StatelessWidget {
   final Shoe shoe;
 
-  const ShoeDetailView({Key? key, required this.shoe}) : super(key: key);
+  const ShoeDetailView({super.key, required this.shoe});
 
   @override
   Widget build(BuildContext context) {

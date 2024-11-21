@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../view_models/wishlist_view_model.dart';
-import '../models/shoe_model.dart';
 import 'shoe_detail_view.dart';
 
 class WishlistPage extends StatelessWidget {
