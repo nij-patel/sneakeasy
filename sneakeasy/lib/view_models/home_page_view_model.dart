@@ -42,8 +42,11 @@ class HomePageViewModel extends ChangeNotifier {
       final styleMatches =
           _filters.style.isEmpty || shoe.material == _filters.style;
 
+      // Check if the shoe is not seen before
+      final notSeenBefore = !shoe.seen;
+
       // Combine all filter conditions
-      return colorMatches && brandMatches && priceMatches && styleMatches;
+      return colorMatches && brandMatches && priceMatches && styleMatches && notSeenBefore;
     }).toList();
   }
 

@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Sneaker Swiper'),
+        title: Text('SneakEasy'),
         actions: [
           IconButton(
             icon: Icon(Icons.filter_alt),
@@ -72,9 +72,7 @@ class _HomePageState extends State<HomePage> {
           : CardSwiper(key: swiperKey,
               cardsCount: filteredShoes.length,
               numberOfCardsDisplayed: 1,
-              cardBuilder: (context, index, horizontalOffsetPercentage,
-                  verticalOffsetPercentage) {
-                    print("Index is $index");
+              cardBuilder: (context, index, horizontalOffsetPercentage, verticalOffsetPercentage) {
                 return ShoeCard(
                   shoe: filteredShoes[index],
                 );
@@ -94,6 +92,8 @@ class _HomePageState extends State<HomePage> {
                       .addShoe(filteredShoes[previndex]);
                   print("Shoe added to wishlist: ${filteredShoes[previndex].name}");
                 }
+                // Mark the shoe as seen
+                filteredShoes[previndex].seen = true;
                 return true;
               },
               scale: 0.9, // Adjusts the scale of the card stack
@@ -120,153 +120,56 @@ class ShoeCard extends StatelessWidget {
           ),
         );
       },
-      child: Card(
-        elevation: 8.0,
-        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-        child: Column(
-          children: [
-            Expanded(
-              child: Image.network(
-                shoe.imageUrl,
-                fit: BoxFit.cover,
-                width: double.infinity,
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+      child: Stack(
+        children: [
+          Card(
+            elevation: 8.0,
+            margin: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+            child: Column(
+              children: [
+                Expanded(
+                  child: Image.network(
+                    shoe.imageUrl,
+                    fit: BoxFit.cover,
+                    width: double.infinity,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
                     children: [
-                      Text(
-                        shoe.name,
-                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            shoe.name,
+                            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                          ),
+                        ],
                       ),
-                      if (shoe.trending) ...[
-                        SizedBox(width: 5),
-                        Text(
-                          '🔥',
-                          style: TextStyle(fontSize: 20),
-                        ),
-                      ],
+                      Text(shoe.brand),
+                      Text("\$${shoe.price.toStringAsFixed(2)}"),
                     ],
                   ),
-                  Text(shoe.brand),
-                  Text("\$${shoe.price.toStringAsFixed(2)}"),
-                ],
+                ),
+              ],
+            ),
+          ),
+          if (shoe.trending)
+            Positioned(
+              top: 10,
+              right: 0,
+              child: Transform.rotate(
+                angle: 0.25, // Adjust the angle as needed
+                child: Text(
+                  '🔥',
+                  style: TextStyle(fontSize: 30),
+                ),
               ),
             ),
-          ],
-        ),
+        ],
       ),
     );
   }
 }
-
-//
-// class SwipingInterface extends StatelessWidget {
-//   final List<Shoe> filteredShoes;
-//   final HomePageViewModel homePageViewModel;
-//
-//   SwipingInterface({
-//     required this.filteredShoes,
-//     required this.homePageViewModel,
-//   });
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     print("Filtered shoes is empty? ${filteredShoes.isEmpty}");
-//     print("Filtered shoes length is: ${filteredShoes.length}");
-//     for (var shoe in filteredShoes){
-//       print("shoe is ${shoe.name}");
-//     }
-//
-//     if (filteredShoes.isEmpty) {
-//       return Center(
-//         child: Text(
-//           'No shoes available to swipe!',
-//           style: TextStyle(fontSize: 16),
-//         ),
-//       );
-//     } else {
-//       print(filteredShoes.length);
-//
-//       return CardSwiper(
-//         cardsCount: filteredShoes.length,
-//         cardBuilder: (context, index, horizontalOffsetPercentage,
-//             verticalOffsetPercentage) {
-//           return ShoeCard(
-//             shoe: filteredShoes[index],
-//           );
-//         },
-//         allowedSwipeDirection:
-//             AllowedSwipeDirection.symmetric(horizontal: true, vertical: false),
-//         onEnd: () {
-//           // Handle what happens when all cards are swiped
-//           print("All shoes swiped!");
-//         },
-//         onSwipe: (previndex, index, direction) {
-//           if (direction == CardSwiperDirection.right) {
-//             Provider.of<WishlistViewModel>(context, listen: false)
-//                 .addShoe(filteredShoes[previndex]);
-//             print("Shoe added to wishlist: ${filteredShoes[previndex].name}");
-//           }
-//           return true;
-//         },
-//         scale: 0.9, // Adjusts the scale of the card stack
-//         padding: const EdgeInsets.all(16.0), // Adds padding around the card
-//         isLoop: false,
-//       );
-//     }
-//   }
-// }
-
-
-// class ShoeCard extends StatelessWidget {
-//   final Shoe shoe;
-//   final horizontalOffsetPercentage;
-//   final verticalOffsetPercentage;
-
-//   ShoeCard({
-//     required this.shoe,
-//     this.horizontalOffsetPercentage,
-//     this.verticalOffsetPercentage,
-//   });
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Card(
-//       elevation: 8.0,
-//       margin: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
-//       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-//       child: Column(
-//         children: [
-//           Expanded(
-//             child: Image.network(
-//               shoe.imageUrl,
-//               fit: BoxFit.cover,
-//               width: double.infinity,
-//             ),
-//           ),
-//           Padding(
-//             padding: const EdgeInsets.all(8.0),
-//             child: Column(
-//               children: [
-//                 Text(
-//                   shoe.name,
-//                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-//                 ),
-//                 Text(shoe.brand),
-//                 Text("\$${shoe.price.toStringAsFixed(2)}"),
-//               ],
-//             ),
-//           ),
-//         ],
-//       ),
-//     );
-//   }
-// }
-
-

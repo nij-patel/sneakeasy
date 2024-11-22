@@ -150,7 +150,7 @@ final List<Shoe> allShoesData = [
     material: 'Leather',
     primaryColor: 'White',
     trending: true,
-    imageUrl: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:--',
+    imageUrl: 'https://reebok.bynder.com/transform/22a2be53-79cb-454d-8618-18f693ff3569/100008491_SLC_eCom-tif',
     link:
         'https://www.reebok.com/p/100008790/classic-leather-shoes?georedirect=false',
   ),
