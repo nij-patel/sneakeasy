@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/shoe_model.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ShoeDetailView extends StatelessWidget {
   final Shoe shoe;
@@ -67,10 +68,16 @@ class ShoeDetailView extends StatelessWidget {
             Spacer(),
             // Buy button
             ElevatedButton(
-              onPressed: () {
+              onPressed: () async {
                 // Add logic to redirect to purchase link
                 print('Redirecting to buy: ${shoe.link}');
                 // You can use launchUrl or similar method for actual implementation
+                final Uri url = Uri.parse(shoe.link);
+                if (await canLaunchUrl(url)) {
+                  await launchUrl(url);
+                } else {
+                  print('Could not launch $url');
+                }
               },
               child: Text('Buy Now'),
             ),
