@@ -73,11 +73,7 @@ class ShoeDetailView extends StatelessWidget {
                 print('Redirecting to buy: ${shoe.link}');
                 // You can use launchUrl or similar method for actual implementation
                 final Uri url = Uri.parse(shoe.link);
-                if (await canLaunchUrl(url)) {
-                  await launchUrl(url);
-                } else {
-                  print('Could not launch $url');
-                }
+                await _launchUrl(url);
               },
               child: Text('Buy Now'),
             ),
@@ -85,5 +81,11 @@ class ShoeDetailView extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+Future<void> _launchUrl(Uri url) async {
+  if (!await launchUrl(url)) {
+    throw Exception('Could not launch $url');
   }
 }

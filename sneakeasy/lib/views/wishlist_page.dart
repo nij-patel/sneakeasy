@@ -25,7 +25,11 @@ class WishlistPage extends StatelessWidget {
               itemBuilder: (context, index) {
                 var shoe = wishlist[index];
                 return ListTile(
-                  leading: Image.network(shoe.imageUrl),
+                  leading: SizedBox(
+                    width: 50, // Set the desired width
+                    height: 50, // Set the desired height
+                    child: Image.network(shoe.imageUrl),
+                  ),
                   title: Text(shoe.name),
                   trailing: IconButton(
                     icon: Icon(Icons.delete),

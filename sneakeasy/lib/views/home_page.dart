@@ -137,7 +137,7 @@ class ShoeCard extends StatelessWidget {
                 Expanded(
                   child: Image.network(
                     shoe.imageUrl,
-                    fit: BoxFit.cover,
+                    fit: BoxFit.contain,
                     width: double.infinity,
                   ),
                 ),
@@ -148,10 +148,21 @@ class ShoeCard extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(
-                            shoe.name,
-                            style: TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.bold),
+                          Flexible(
+                            child: Wrap(
+                              alignment: WrapAlignment.center,
+                              children: [
+                                Align(
+                                  alignment: Alignment.center,
+                                  child: Text(
+                                    shoe.name,
+                                    style: TextStyle(
+                                        fontSize: 20, fontWeight: FontWeight.bold),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ],
                       ),
