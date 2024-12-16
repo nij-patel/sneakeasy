@@ -9,8 +9,9 @@ final List<Shoe> allShoesData = [
     material: 'Leather',
     primaryColor: 'Red',
     trending: true,
-    imageUrl: 'https://i.ebayimg.com/images/g/rx4AAOSwyele~3e9/s-l1200.jpg',
-    link: 'https://www.ebay.com/itm/274493978849',
+    imageUrl:
+        'https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/083/706/674/original/651566_01.jpg.jpeg?action=crop&width=600',
+    link: 'https://www.goat.com/sneakers/air-jordan-1-mid-chicago-554724-173',
   ),
   Shoe(
     name: 'Yeezy Boost 350 Triple White',
@@ -20,9 +21,9 @@ final List<Shoe> allShoesData = [
     material: 'Mesh',
     primaryColor: 'White',
     trending: false,
-    imageUrl: 'https://cdn.flightclub.com/TEMPLATE/800801/1.jpg?w=3840',
-    link:
-        'https://www.flightclub.com/yeezy-boost-350-v2-cwhite-cwhite-cwhite-800801',
+    imageUrl:
+        'https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/079/011/427/original/116662_01.jpg.jpeg?action=crop&width=600',
+    link: 'https://www.goat.com/sneakers/yeezy-boost-350-v2-cream-white-cp9366',
   ),
   Shoe(
     name: 'Nike Air Max 90 Infrared',
@@ -32,8 +33,9 @@ final List<Shoe> allShoesData = [
     material: 'Leather & Mesh',
     primaryColor: 'White',
     trending: true,
-    imageUrl: 'https://cdn.flightclub.com/750/TEMPLATE/138038/1.jpg',
-    link: 'https://www.flightclub.com/nike-air-max-90-infrared-138038',
+    imageUrl:
+        'https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/099/906/882/original/695234_01.jpg.jpeg?action=crop&width=600',
+    link: 'https://www.goat.com/sneakers/air-max-90-infrared-2020-ct1685-100',
   ),
   Shoe(
     name: 'Adidas Ultraboost 21 Solar Red',
@@ -43,8 +45,9 @@ final List<Shoe> allShoesData = [
     material: 'Primeknit',
     primaryColor: 'Red',
     trending: false,
-    imageUrl: 'https://i.ebayimg.com/images/g/iWgAAOSwG0Zly7sV/s-l1200.jpg',
-    link: 'https://www.flightclub.com/adidas-ultraboost-21-solar-red-231194',
+    imageUrl:
+        'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/051/952/865/original/FZ1925.png.png?action=crop&width=600',
+    link: 'https://www.goat.com/sneakers/ultraboost-21-white-solar-red-fz1925',
   ),
   Shoe(
     name: 'Converse Chuck Taylor All-Star',
@@ -55,8 +58,9 @@ final List<Shoe> allShoesData = [
     primaryColor: 'Black',
     trending: true,
     imageUrl:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGf6B6QueSe8SRXt3F9WZ98V8NIg2rObaMQ&s',
-    link: 'https://www.flightclub.com/converse-chuck-taylor-all-star-199008',
+        'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/023/673/908/original/164919C.png.png?action=crop&width=600',
+    link:
+        'https://www.goat.com/sneakers/chuck-taylor-all-star-hi-black-164919c',
   ),
   Shoe(
     name: 'Puma RS-X Bold',
@@ -67,8 +71,9 @@ final List<Shoe> allShoesData = [
     primaryColor: 'Blue',
     trending: false,
     imageUrl:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIffWyp3Cl1p-p5JjzDfP_do_9TQ7Qz_NVTg&s',
-    link: 'https://www.flightclub.com/puma-rs-x-bold-175329',
+        'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/025/328/551/original/372715_01.png.png?action=crop&width=600',
+    link:
+        'https://www.goat.com/sneakers/rs-x-bold-black-andean-toucan-orange-372715-01',
   ),
   Shoe(
     name: 'Vans Old Skool Black/White',
@@ -79,8 +84,8 @@ final List<Shoe> allShoesData = [
     primaryColor: 'Black',
     trending: true,
     imageUrl:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN_muoPdwDrp-FHTK1DUZuX6AbLneTNzqh7g&s',
-    link: 'https://www.flightclub.com/vans-old-skool-black-white-213960',
+        'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/011/783/831/original/VN000ZD4Y28.png.png?action=crop&width=600',
+    link: 'https://www.goat.com/sneakers/old-skool-pro-vn000zd4y28',
   ),
   Shoe(
     name: 'New Balance 550 White/Green',
@@ -91,8 +96,8 @@ final List<Shoe> allShoesData = [
     primaryColor: 'Green',
     trending: true,
     imageUrl:
-        'https://images.stockx.com/images/New-Balance-550-White-Green-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1628002321',
-    link: 'https://www.flightclub.com/new-balance-550-white-green-211405',
+        'https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/102/479/033/original/781801_01.jpg.jpeg?action=crop&width=600',
+    link: 'https://www.goat.com/sneakers/550-white-green-bb550wt1',
   ),
   Shoe(
     name: 'Jordan 4 Retro Bred',
@@ -103,8 +108,9 @@ final List<Shoe> allShoesData = [
     primaryColor: 'Black',
     trending: true,
     imageUrl:
-        'https://images.stockx.com/images/Air-Jordan-4-Retro-Black-Cement-2019-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1606316608',
-    link: 'https://www.flightclub.com/jordan-4-retro-bred-138206',
+        'https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/097/777/584/original/1293064_01.jpg.jpeg?action=crop&width=600',
+    link:
+        'https://www.goat.com/sneakers/air-jordan-4-retro-bred-reimagined-fv5029-006',
   ),
   Shoe(
     name: 'Asics Gel-Kayano 14 White/Silver',
@@ -114,8 +120,10 @@ final List<Shoe> allShoesData = [
     material: 'Mesh',
     primaryColor: 'Silver',
     trending: false,
-    imageUrl: 'https://cdn.flightclub.com/TEMPLATE/312097/1.jpg',
-    link: 'https://www.flightclub.com/asics-gel-kayano-14-white-silver-233703',
+    imageUrl:
+        'https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/092/006/010/original/1159238_01.jpg.jpeg?action=crop&width=600',
+    link:
+        'https://www.goat.com/sneakers/wmns-gel-kayano-14-silver-grape-1202a056-111',
   ),
   Shoe(
     name: 'Reebok Club C 85 Vintage',
@@ -126,8 +134,9 @@ final List<Shoe> allShoesData = [
     primaryColor: 'White',
     trending: true,
     imageUrl:
-        'https://reebok.bynder.com/transform/535ef73b-8bfa-4a40-b05c-5137540b2269/100000317_SLC_eCom-tif?io=transform:fit,width:500&quality=100',
-    link: 'https://www.flightclub.com/reebok-club-c-85-vintage-208675',
+        'https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/092/466/993/original/1258969_01.jpg.jpeg?action=crop&width=600',
+    link:
+        'https://www.goat.com/sneakers/club-c-85-vintage-chalk-glen-green-100000317',
   ),
   Shoe(
     name: 'Saucony Shadow 6000 White/Blue',
@@ -138,10 +147,10 @@ final List<Shoe> allShoesData = [
     primaryColor: 'Blue',
     trending: false,
     imageUrl:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx82yVt5ByrfMfP4SM6pqJJ_vANPpaG8Ae0A&s',
-    link: 'https://www.flightclub.com/saucony-shadow-6000-white-blue-221749',
+        'https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/100/305/122/original/1263139_01.jpg.jpeg?action=crop&width=1000',
+    link:
+        'https://www.goat.com/sneakers/shadow-6000-premium-blue-white-s70785-1',
   ),
-  // Additional shoes
   Shoe(
     name: 'Reebok Classic Leather',
     price: 75,
@@ -150,9 +159,10 @@ final List<Shoe> allShoesData = [
     material: 'Leather',
     primaryColor: 'White',
     trending: true,
-    imageUrl: 'https://reebok.bynder.com/transform/22a2be53-79cb-454d-8618-18f693ff3569/100008491_SLC_eCom-tif',
+    imageUrl:
+        'https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/070/902/579/original/915017_01.jpg.jpeg?action=crop&width=600',
     link:
-        'https://www.reebok.com/p/100008790/classic-leather-shoes?georedirect=false',
+        'https://www.goat.com/sneakers/classic-leather-1983-vintage-chalk-vector-navy-gx6123',
   ),
   Shoe(
     name: 'Saucony Jazz Original',
@@ -163,9 +173,8 @@ final List<Shoe> allShoesData = [
     primaryColor: 'Grey',
     trending: false,
     imageUrl:
-        'https://m.media-amazon.com/images/I/81h2t-HTo1L._AC_SR1840,1472_.jpg',
-    link:
-        'https://www.zappos.com/p/unisex-saucony-originals-jazz-81-white-gray/product/9820824/color/749',
+        'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/097/962/778/original/S2044_691.png.png?action=crop&width=600',
+    link: 'https://www.goat.com/sneakers/jazz-original-grey-navy-s2044-691',
   ),
   Shoe(
     name: 'Air Jordan 5 Fire Red',
@@ -189,8 +198,8 @@ final List<Shoe> allShoesData = [
     primaryColor: 'Black',
     trending: true,
     imageUrl:
-        'https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/cc3416c01bff48249f77a7fd012dd9fd_9366/Samba_Classic_Shoes_White_772109_01_standard.jpg',
-    link: 'https://www.adidas.com/us/samba-classic-shoes/772109.html',
+        'https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/089/143/738/original/837279_01.jpg.jpeg?action=crop&width=600',
+    link: 'https://www.goat.com/sneakers/samba-classic-white-2021-772109-21',
   ),
   Shoe(
     name: 'Under Armour HOVR Sonic 4',
@@ -200,8 +209,9 @@ final List<Shoe> allShoesData = [
     material: 'Knit',
     primaryColor: 'Black',
     trending: false,
-    imageUrl: 'https://i.ebayimg.com/images/g/Kp4AAOSwtdpm-YA~/s-l1600.webp',
-    link: 'https://www.ebay.com/itm/387433432937',
+    imageUrl:
+        'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/052/293/008/original/3023543_002.png.png?action=crop&width=600',
+    link: 'https://www.goat.com/sneakers/hovr-sonic-4-black-white-3023543-002',
   ),
   Shoe(
     name: 'Brooks Ghost 14',
@@ -212,9 +222,8 @@ final List<Shoe> allShoesData = [
     primaryColor: 'Grey',
     trending: true,
     imageUrl:
-        'https://m.media-amazon.com/images/I/71S+w4QQ0HL._AC_SR1840,1472_.jpg',
-    link:
-        'https://www.zappos.com/p/womens-brooks-single-shoe-ghost-14-alloy-primer-grey-oyster/product/9671546/color/913591',
+        'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/070/237/436/original/110369_1D_078.png.png?action=crop&width=600',
+    link: 'https://www.goat.com/sneakers/ghost-14-grey-blue-red-110369-1d-078',
   ),
   Shoe(
     name: 'Hoka Clifton 8',
@@ -224,9 +233,9 @@ final List<Shoe> allShoesData = [
     material: 'Mesh',
     primaryColor: 'Black',
     trending: true,
-    imageUrl: 'https://m.media-amazon.com/images/I/71+8YdknJLL._AC_SX695_.jpg',
-    link:
-        'https://www.amazon.com/HOKA-ONE-Womens-Low-top-Sneaker/dp/B09WTJX38X',
+    imageUrl:
+        'https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/087/100/844/original/1042565_01.jpg.jpeg?action=crop&width=600',
+    link: 'https://www.goat.com/sneakers/clifton-8-black-white-1119393-bwht',
   ),
   Shoe(
     name: 'On Cloud 5',
@@ -237,9 +246,8 @@ final List<Shoe> allShoesData = [
     primaryColor: 'White',
     trending: true,
     imageUrl:
-        'https://dks.scene7.com/is/image/GolfGalaxy/22MAZWCLD5RSTBLCKFTW_Undyed?qlt=70&wid=500&fmt=webp&op_sharpen=1',
-    link:
-        'https://www.dickssportinggoods.com/p/on-womens-cloud-5-shoes-22mazwcld5rstblckftw/22mazwcld5rstblckftw?sku=23764263',
+        'https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/097/110/742/original/1267232_01.jpg.jpeg?action=crop&width=600',
+    link: 'https://www.goat.com/sneakers/wmns-cloud-5-white-59-98373',
   ),
   Shoe(
     name: 'Saucony Endorphin Speed 3',
@@ -250,9 +258,9 @@ final List<Shoe> allShoesData = [
     primaryColor: 'Pink',
     trending: true,
     imageUrl:
-        'https://img.runningwarehouse.com/watermark/rs.php?path=SES3M03-1.jpg&nw=1080',
+        'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/076/953/409/original/S20756_40.png.png?action=crop&width=600',
     link:
-        'https://www.runningwarehouse.com/Saucony_Endorphin_Speed_3/descpage-SES3M03.html',
+        'https://www.goat.com/sneakers/endorphin-speed-3-prospect-quartz-s20756-40',
   ),
   Shoe(
     name: 'Crocs Classic Clog',
@@ -263,8 +271,8 @@ final List<Shoe> allShoesData = [
     primaryColor: 'Blue',
     trending: true,
     imageUrl:
-        'https://media.crocs.com/images/t_pdphero/f_auto%2Cq_auto/products/10001_4ST_ALT100/crocs',
-    link: 'https://www.crocs.com/p/classic-clog/10001.html',
+        'https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/073/771/874/original/902162_01.jpg.jpeg?action=crop&width=600',
+    link: 'https://www.goat.com/sneakers/classic-clog-navy-10001-410',
   ),
   Shoe(
     name: 'Nike Pegasus 40',
@@ -275,9 +283,9 @@ final List<Shoe> allShoesData = [
     primaryColor: 'Grey',
     trending: false,
     imageUrl:
-        'https://img.runningwarehouse.com/watermark/rs.php?path=NP40M14-1.jpg&nw=1080',
+        'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/088/548/480/original/DV3853_102.png.png?action=crop&width=600',
     link:
-        'https://www.runningwarehouse.com/Nike_Pegasus_40/descpage-NP40M14.html',
+        'https://www.goat.com/sneakers/air-zoom-pegasus-40-white-wolf-grey-dv3853-102',
   ),
   Shoe(
     name: 'Nike Free Run 5.0',
@@ -287,9 +295,10 @@ final List<Shoe> allShoesData = [
     material: 'Mesh',
     primaryColor: 'Gold',
     trending: false,
-    imageUrl: 'https://cdn.modesens.com/media/137945767?w=400',
+    imageUrl:
+        'https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/057/563/452/original/783612_01.jpg.jpeg?action=crop&width=600',
     link:
-        'https://modesens.com/product/nike-men-free-run-50-road-running-shoes-grey-50405401/?country=us&language=en',
+        'https://www.goat.com/sneakers/free-run-5-0-steam-olive-aura-cz1884-002',
   ),
   Shoe(
     name: 'Adidas NMD R1 V2',
@@ -300,9 +309,9 @@ final List<Shoe> allShoesData = [
     primaryColor: 'Black',
     trending: true,
     imageUrl:
-        'https://images.footlocker.com/is/image/EBFL2/IE7279_a1?wid=500&hei=500&fmt=png-alpha',
+        'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/046/531/764/original/H02540.png.png?action=crop&width=600',
     link:
-        'https://www.footlocker.com/product/~/IE7279.html?source=shoppingads&locale=en-US&SID=6936&inceptor=1',
+        'https://www.goat.com/sneakers/nmd_r1-v2-j-overbranded-core-black-h02540',
   ),
   Shoe(
     name: 'Under Armour HOVR Phantom 3',
@@ -313,9 +322,9 @@ final List<Shoe> allShoesData = [
     primaryColor: 'Grey',
     trending: true,
     imageUrl:
-        'https://images.footlocker.com/is/image/EBFL2/26993100_a1?wid=500&hei=500&fmt=png-alpha',
+        'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/090/685/495/original/3026652_100.png.png?action=crop&width=600',
     link:
-        'https://www.footlocker.com/product/~/26993100.html?source=shoppingads&locale=en-US&SID=6936&inceptor=1',
+        'https://www.goat.com/sneakers/hovr-phantom-3-se-elevate-halo-grey-3026652-100',
   ),
   Shoe(
     name: 'Nike Blazer Mid 77 Vintage',
@@ -326,8 +335,8 @@ final List<Shoe> allShoesData = [
     primaryColor: 'White',
     trending: true,
     imageUrl:
-        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fb7eda3c-5ac8-4d05-a18f-1c2c5e82e36e/BLAZER+MID+%2777+VNTG.png',
+        'https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/099/439/682/original/502784_01.jpg.jpeg?action=crop&width=600',
     link:
-        'https://www.nike.com/t/blazer-mid-77-vintage-mens-shoes-nw30B2/BQ6806-100?nikemt=true',
+        'https://www.goat.com/sneakers/blazer-mid-77-vintage-white-black-bq6806-100',
   ),
 ];

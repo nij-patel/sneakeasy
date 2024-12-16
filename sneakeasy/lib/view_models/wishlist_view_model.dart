@@ -28,8 +28,8 @@ class WishlistViewModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  void buyShoe(Shoe _shoe) async {
-    final Uri url = Uri.parse(_shoe!.link);
+  void buyShoe(Shoe shoe) async {
+    final Uri url = Uri.parse(shoe!.link);
     if (await canLaunchUrl(url)) {
       await launchUrl(url);
     } else {
