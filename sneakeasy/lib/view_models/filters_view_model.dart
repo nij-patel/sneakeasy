@@ -1,20 +1,36 @@
 import 'package:flutter/material.dart';
-
 import '../models/filters_model.dart';
+import '../data/shoe_data.dart';
 import 'home_page_view_model.dart';
 
 class FiltersViewModel extends ChangeNotifier {
   final Filters _filters;
+  late List<String> availableColors;
+  late List<String> availableBrands;
+  late List<String> availableMaterials;
+  late List<String> availableStyles;
 
-  // Predefined options for filters
-  final List<String> availableColors = ['Red', 'Blue', 'Green', 'Black'];
-  final List<String> availableBrands = ['Nike', 'Adidas', 'Puma', 'Reebok'];
-  final List<String> availableMaterials = ['Leather', 'Mesh', 'Canvas'];
-  final List<String> availableTypes = ['Running', 'Basketball', 'Casual'];
-  final List<String> availableSizes = ['7', '8', '9', '10', '11'];
-  final List<String> availableStyles = ['Sporty', 'Modern', 'Retro', 'Classic'];
+  FiltersViewModel(this._filters) {
+    _initializeAvailableFilters();
+  }
 
-  FiltersViewModel(this._filters);
+  void _initializeAvailableFilters() {
+    // Extract unique values from shoe data
+    availableColors = _getUniqueValues((shoe) => shoe.primaryColor);
+    availableBrands = _getUniqueValues((shoe) => shoe.brand);
+    availableMaterials = _getUniqueValues((shoe) => shoe.material);
+    availableStyles = _getUniqueValues((shoe) => shoe.material); // Using material as style
+  }
+
+  List<String> _getUniqueValues(String Function(dynamic shoe) getValue) {
+    return allShoesData
+        .map(getValue)
+        .toSet()
+        .toList()
+        .where((value) => value.isNotEmpty)
+        .toList()
+      ..sort();
+  }
 
   void applyFilters(HomePageViewModel homePageViewModel) {
     // Applies the filter criteria on the home page view model
